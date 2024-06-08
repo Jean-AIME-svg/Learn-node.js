@@ -8,9 +8,7 @@ let users = [{
     email : "kevin@example.com",
 }]
 
-rest.get('/', (req, res) => {
-    res.send("Welcome to my api page bro")
-})
+
 
 rest.get('/api', (req, res) => {
     res.send("welcome to api page")
@@ -18,7 +16,7 @@ rest.get('/api', (req, res) => {
 rest.get('/api/users', (req, res) => {
    
    console.log(users)
-    return res.json(users);
+   
 })
 
 
